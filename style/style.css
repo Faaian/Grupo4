@@ -1,0 +1,79 @@
+body{
+    margin: 10;
+    padding: 10;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(150deg, #666800, #913602);
+    height: 100vh;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: dimgray;
+    border-radius: 10px;
+}
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .usuario{
+    position: relative;
+    border-bottom: 2px solid #adada0;
+    margin: 15px 0;
+}
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid #adada0;
+    margin: 15px 0;
+}
+
+.usuario input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.usuario label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adada0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adada0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
