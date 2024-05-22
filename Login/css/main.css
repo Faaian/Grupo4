@@ -460,3 +460,7 @@ iframe {
     opacity: 1;
   }
 }
+
+.formulario {
+  padding: 10%;
+}
