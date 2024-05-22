@@ -347,10 +347,17 @@
     // Cerrar el modal
     var bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
     bookingModal.hide();
-    // Desactivar el fondo oscuro eliminando la clase "modal-open" del body y el elemento "modal-backdrop"
-    document.body.classList.remove('modal-open');
-    var modalBackdrop = document.querySelector('.modal-backdrop');
-    modalBackdrop.parentNode.removeChild(modalBackdrop);
+});
+
+// Cerrar el modal y limpiar los campos del formulario cuando se hace clic en el fondo oscuro
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        // Limpiar los campos del formulario
+        document.getElementById('bookingForm').reset();
+        // Cerrar el modal
+        var bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+        bookingModal.hide();
+    }
 });
     </script>
 </body>
